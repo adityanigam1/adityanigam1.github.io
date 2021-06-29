@@ -26,16 +26,28 @@
 <style>
     body { background-color:#000;}
     </style>
+<script>
+ var x = document.getElementById("myAudio");
 
+function playAudio() {
+  x.play();
+}
+
+function pauseAudio() {
+  x.pause();
+}
+ playAudio();
+ 
+ </script>
 </head>
 <body>
-  <audio id="myAudio" src="walker.mp3"></audio>
 
-    <audio id="myAudio" hidden="true" controls autoplay loop>
+
+    <audio id="myAudio" hidden="true" controls loop>
         <source src="walkertrim.mp3" type="audio/ogg">
         <source src="walkertrim.mp3" type="audio/mpeg">
       
-      </audio>
+      </audio> 
     <div class="header">
         <div class="w3-bar w3-border w3-card-4 w3-light-grey w3-large ul ">
             <span href="#" class="branding w3-bar-item w3-bar-item w3-button w3-mobile">&gt;&gt;&gt; root@cybernigam :~ </span>
